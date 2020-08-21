@@ -2,12 +2,20 @@ import React, { Suspense } from 'react';
 import { render } from 'react-dom';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Routes from './route';
+import './gloab.css';
 render(
 	<BrowserRouter>
 		<Suspense fallback={<div>loading...</div>}>
 			<Switch>
 				{Routes?.map((it, i) => (
-					<Route component={it.component} key={i} path={it.path} />
+					<Route
+						exact={it.exact}
+						key={i}
+						path={it.path}
+						render={(props: any) => (
+							<it.component {...props} routes={it.routes} />
+						)}
+					/>
 				))}
 			</Switch>
 		</Suspense>

@@ -1,7 +1,7 @@
 {
-	"name": "brts-ts",
+	"name": "Brts-Design",
 	"version": "1.0.0",
-	"description": "支持 TS 的 Brts 应用",
+	"description": "基于 Brts 的 Design 组件",
 	"main": "index.ts",
 	"scripts": {
 		"lint": "eslint --ext .ts --ext .tsx src/",
@@ -53,6 +53,7 @@
 		"webpack-merge": "^5.0.9"
 	},
 	"dependencies": {
+		"antd": "^4.5.4",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-router-dom": "^5.2.0"

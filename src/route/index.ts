@@ -3,11 +3,19 @@ import { lazy } from 'react';
 const routes = [
 	{
 		'path': '/',
-		'component': lazy(() => import('../page/home'))
+		'component': lazy(() => import('../page/home')),
+		'exact': true
 	},
 	{
-		'path': '/login',
-		'component': lazy(() => import('../page/login'))
+		'path': '/components',
+		'component': lazy(() => import('../page/component_list')),
+		'exact': false,
+		'children': [
+			{
+				'path': '/components/select',
+				'component': lazy(() => import('../page/component_list/cps/select'))
+			}
+		]
 	}
 ];
 

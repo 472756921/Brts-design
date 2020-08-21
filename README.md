@@ -1,4 +1,8 @@
-# Brts React TypeScript框架
+# Brts 组件库
 
-实用的 React 基础框架，内置 内置 webpack, mock 服务，webpack 可按需求配置  
-代码规范执行 eslint, 结合 prettierrc 美化
+基于 antd 4.0 的 React 通用组件库
+
+## 为什么基于 antd 
+1. 个人建立基础组件库很难
+2. Antd是成熟且受人喜爱的
+3. 这套组件库更多的是针对业务形态的封装
