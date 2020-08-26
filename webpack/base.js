@@ -23,7 +23,7 @@ module.exports = (env, argv) => {
 					 */
 					test: /\.(css|less)$/,
 					exclude: /src/,
-					use: ['style-loader', 'css-loader']
+					use: ['style-loader', 'css-loader', 'less-loader']
 				},
 				{
 					/**
@@ -38,7 +38,8 @@ module.exports = (env, argv) => {
 							options: {
 								modules: true // 开启模块化
 							}
-						}
+						},
+						'less-loader'
 					]
 				},
 				{

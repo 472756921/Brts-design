@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, lazy } from 'react';
 import { render } from 'react-dom';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Routes from './route';
@@ -13,7 +13,7 @@ render(
 						key={i}
 						path={it.path}
 						render={(props: any) => (
-							<it.component {...props} routes={it.routes} />
+							<it.component {...props} routes={it.children} />
 						)}
 					/>
 				))}
