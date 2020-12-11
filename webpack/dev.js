@@ -10,6 +10,9 @@ module.exports = (env, argv) => {
 		entry: {
 			main: './src/app.tsx'
 		},
+		output: {
+			publicPath: '/'
+		},
 		plugins: [
 			new HtmlWebpackPlugin({
 				title: 'Benson',

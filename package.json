@@ -8,7 +8,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "webpack --mode=production --config webpack/prod.js",
 		"start": "webpack-dev-server --config webpack/dev.js --colors --watch",
-		"sbuild": "webpack --config webpack/server.js"
+		"build:lib": "webpack --config webpack/prodLib.js"
 	},
 	"husky": {
 		"hooks": {

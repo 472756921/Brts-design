@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Select = () => {
-	return <div>Select</div>;
+	return <div style={{ textAlign: 'center' }}>Select</div>;
 };
 
 export default Select;

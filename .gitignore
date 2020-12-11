@@ -7,3 +7,4 @@ dist_server
 .idea
 .git
 package-lock.json
+lib
