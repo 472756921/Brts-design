@@ -1,8 +1,7 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
 import { Route, Switch, useRouteMatch, Link } from 'react-router-dom';
-import LadderPrice from '../../components/LadderPrice/LadderPrice';
-
+import { LadderPrice } from '../../components';
 const { Header, Content, Footer, Sider } = Layout;
 
 const Styles = require('./index.css');
