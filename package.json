@@ -10,12 +10,9 @@
 		"start": "webpack-dev-server --config webpack/dev.js --colors --watch",
 		"build:lib": "webpack --config webpack/prodLib.js"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged",
-			"pre-push": "lint-staged"
-		}
-	},
+	"pre-commit": [
+		"lint"
+	],
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [
 			"npm run lint",
@@ -47,9 +44,9 @@
 		"eslint-plugin-react": "^7.20.6",
 		"file-loader": "^6.0.0",
 		"html-webpack-plugin": "^4.3.0",
-		"husky": "^4.3.6",
 		"mini-css-extract-plugin": "^0.10.0",
 		"mocker-api": "^2.3.5",
+		"pre-commit": "^1.2.2",
 		"prettier": "^2.0.5",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
