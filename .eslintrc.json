@@ -17,7 +17,11 @@
 		"sourceType": "module"
 	},
 	"settings": {
-		"import/ignore": ["node_modules", "mocks"]
+		"import/ignore": ["node_modules", "mocks"],
+		"react": {
+			"pragma": "React",
+			"version": "detect"
+		}
 	},
 	"rules": {
 		"@typescript-eslint/no-var-requires": "off",
