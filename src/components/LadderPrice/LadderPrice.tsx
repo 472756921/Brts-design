@@ -5,7 +5,6 @@ const Styles = require('./style/index.css');
 
 const LadderPrice = (props: LadderPriceProps): React.ReactElement => {
 	const message = ['入住时间', '小时'];
-
 	const [testData, changeTestData] = useState([
 		{
 			num: 12,
@@ -24,11 +23,6 @@ const LadderPrice = (props: LadderPriceProps): React.ReactElement => {
 			percentage: 0
 		}
 	]);
-
-	// useEffect(() => {
-	// 	console.log('123 :>> ', 123);
-	// }, [testData]);
-
 	const debounce = (func: any, wait: number) => {
 		let timeout: any;
 
@@ -42,7 +36,6 @@ const LadderPrice = (props: LadderPriceProps): React.ReactElement => {
 
 	const changeData = (e: any, index: number, type: string) => {
 		let newData = testData[index];
-
 		if (type === 'num') {
 			if (e > testData[index + 1]?.num) {
 				return false;

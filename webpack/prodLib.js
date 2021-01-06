@@ -27,7 +27,7 @@ module.exports = (env, argv) => {
 			new CleanWebpackPlugin(),
 			new BundleAnaluzerPlugin()
 		],
-		// externals: { react: 'react', antd: 'antd' },
+		externals: { react: 'react', antd: 'antd/es' },
 		optimization: {
 			usedExports: true //清除无用JS
 		}
