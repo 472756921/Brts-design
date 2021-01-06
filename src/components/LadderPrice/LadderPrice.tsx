@@ -40,7 +40,6 @@ const LadderPrice = (props: LadderPriceProps): React.ReactElement => {
 			if (e > testData[index + 1]?.num) {
 				return false;
             }
-            
 			newData.num = Number(e);
 		} else {
 			newData.percentage = Number(e);
