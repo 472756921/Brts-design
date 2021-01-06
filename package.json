@@ -13,13 +13,6 @@
 	"pre-commit": [
 		"lint"
 	],
-	"lint-staged": {
-		"*.{js,jsx,ts,tsx}": [
-			"npm run lint",
-			"eslint --fix",
-			"git add"
-		]
-	},
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
@@ -65,7 +58,5 @@
 		"> 1%",
 		"not ie <= 8"
 	],
-	"dependencies": {
-		"lint-staged": "^10.5.3"
-	}
+	"dependencies": {}
 }
