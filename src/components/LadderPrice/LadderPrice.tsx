@@ -35,11 +35,12 @@ const LadderPrice = (props: LadderPriceProps): React.ReactElement => {
 	};
 
 	const changeData = (e: any, index: number, type: string) => {
-		let newData = testData[index];
+        let newData = testData[index];
 		if (type === 'num') {
 			if (e > testData[index + 1]?.num) {
 				return false;
-			}
+            }
+            
 			newData.num = Number(e);
 		} else {
 			newData.percentage = Number(e);
