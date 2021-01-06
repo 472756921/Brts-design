@@ -40,7 +40,7 @@
 		"eslint-plugin-react": "^7.20.6",
 		"file-loader": "^6.0.0",
 		"html-webpack-plugin": "^4.3.0",
-		"husky": "^4.2.5",
+		"husky": "^4.3.6",
 		"mini-css-extract-plugin": "^0.10.0",
 		"mocker-api": "^2.3.5",
 		"prettier": "^2.0.5",
@@ -60,5 +60,8 @@
 	"browserslist": [
 		"> 1%",
 		"not ie <= 8"
-	]
+	],
+	"dependencies": {
+		"lint-staged": "^10.5.3"
+	}
 }
