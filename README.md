@@ -1,12 +1,27 @@
-# Brts 组件库
+# Brts-Design
 
-基于 antd 4.0 的 React 通用组件库
+## Getting Started
 
-## 为什么基于 antd 
-1. 个人建立基础组件库很难
-2. Antd是成熟且受人喜爱的
-3. 这套组件库更多的是针对业务形态的封装
+Install dependencies,
 
-## 结构介绍
-page 是静态站点代码
-components 是组件代码
+```bash
+$ npm i
+```
+
+Start the dev server,
+
+```bash
+$ npm start
+```
+
+Build documentation,
+
+```bash
+$ npm run docs:build
+```
+
+Build library via `father-build`,
+
+```bash
+$ npm run build
+```
