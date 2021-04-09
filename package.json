@@ -1,7 +1,6 @@
 {
-  "private": true,
-  "name": "Brts-Design",
-  "version": "1.0.0",
+  "name": "brts-design",
+  "version": "1.0.1",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -28,6 +27,7 @@
     ]
   },
   "dependencies": {
+    "antd": "^4.15.0",
     "react": "^16.12.0"
   },
   "devDependencies": {
@@ -38,5 +38,19 @@
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
     "yorkie": "^2.0.0"
-  }
+  },
+  "description": "Install dependencies,",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/472756921/Brts-Design.git"
+  },
+  "author": "Benson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/472756921/Brts-Design/issues"
+  },
+  "homepage": "https://github.com/472756921/Brts-Design#readme"
 }
